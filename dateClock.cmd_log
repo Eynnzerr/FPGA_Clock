@@ -1,0 +1,226 @@
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 
+xst -intstyle ise -ifn "E:/xilinx/projects/dateClock/dateClock.xst" -ofn "E:/xilinx/projects/dateClock/dateClock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port.ucf -p xc7a100t-csg324-3 dateClock.ngc dateClock.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dateClock_map.ncd dateClock.ngd dateClock.pcf 
+par -w -intstyle ise -ol high -mt off dateClock_map.ncd dateClock.ncd dateClock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf -ucf port.ucf 
+bitgen -intstyle ise -f dateClock.ut dateClock.ncd 

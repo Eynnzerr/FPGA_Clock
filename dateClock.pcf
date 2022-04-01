@@ -1,0 +1,33 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Apr 01 23:47:53 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "bitO<3>" LOCATE = SITE "N5" LEVEL 1;
+COMP "mode" LOCATE = SITE "U2" LEVEL 1;
+COMP "bitO<4>" LOCATE = SITE "N2" LEVEL 1;
+COMP "bitO<5>" LOCATE = SITE "N4" LEVEL 1;
+COMP "bitO<6>" LOCATE = SITE "L1" LEVEL 1;
+COMP "bitO<7>" LOCATE = SITE "M1" LEVEL 1;
+COMP "clk" LOCATE = SITE "E3" LEVEL 1;
+COMP "EN" LOCATE = SITE "P4" LEVEL 1;
+COMP "increHourUnit" LOCATE = SITE "T1" LEVEL 1;
+COMP "segO<0>" LOCATE = SITE "M4" LEVEL 1;
+COMP "noon" LOCATE = SITE "P2" LEVEL 1;
+COMP "segO<1>" LOCATE = SITE "L3" LEVEL 1;
+COMP "segO<2>" LOCATE = SITE "N1" LEVEL 1;
+COMP "segO<3>" LOCATE = SITE "L5" LEVEL 1;
+COMP "segO<4>" LOCATE = SITE "L4" LEVEL 1;
+COMP "segO<5>" LOCATE = SITE "K3" LEVEL 1;
+COMP "segO<6>" LOCATE = SITE "M2" LEVEL 1;
+COMP "segO<7>" LOCATE = SITE "L6" LEVEL 1;
+COMP "hourReport" LOCATE = SITE "R2" LEVEL 1;
+COMP "increMinTen" LOCATE = SITE "R3" LEVEL 1;
+COMP "reset" LOCATE = SITE "E16" LEVEL 1;
+COMP "bitO<0>" LOCATE = SITE "N6" LEVEL 1;
+COMP "increHourTen" LOCATE = SITE "T3" LEVEL 1;
+COMP "bitO<1>" LOCATE = SITE "M6" LEVEL 1;
+COMP "increMinUnit" LOCATE = SITE "P3" LEVEL 1;
+COMP "bitO<2>" LOCATE = SITE "M3" LEVEL 1;
+SCHEMATIC END;
+

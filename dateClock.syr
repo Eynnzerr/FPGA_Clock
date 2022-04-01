@@ -1,0 +1,867 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: dateClock.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "dateClock.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "dateClock"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : dateClock
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\xilinx\projects\dateClock\counter6.v" into library work
+Parsing module <counter6>.
+Analyzing Verilog file "E:\xilinx\projects\dateClock\counter3.v" into library work
+Parsing module <counter3>.
+Analyzing Verilog file "E:\xilinx\projects\dateClock\counter10_vari.v" into library work
+Parsing module <counter10_vari>.
+Analyzing Verilog file "E:\xilinx\projects\dateClock\counter10.v" into library work
+Parsing module <counter10>.
+Analyzing Verilog file "E:\xilinx\projects\dateClock\counter8.v" into library work
+Parsing module <counter8>.
+Analyzing Verilog file "E:\xilinx\projects\dateClock\counter60.v" into library work
+Parsing module <counter60>.
+Analyzing Verilog file "E:\xilinx\projects\dateClock\counter24.v" into library work
+Parsing module <counter24>.
+Analyzing Verilog file "E:\xilinx\projects\dateClock\segSelector.v" into library work
+Parsing module <segSelector>.
+Analyzing Verilog file "E:\xilinx\projects\dateClock\freq_divider.v" into library work
+Parsing module <freq_divider>.
+Analyzing Verilog file "E:\xilinx\projects\dateClock\dateClock.v" into library work
+Parsing module <dateClock>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <dateClock>.
+
+Elaborating module <freq_divider>.
+
+Elaborating module <segSelector>.
+
+Elaborating module <counter8>.
+
+Elaborating module <counter60>.
+
+Elaborating module <counter10>.
+
+Elaborating module <counter6>.
+
+Elaborating module <counter24>.
+
+Elaborating module <counter10_vari>.
+
+Elaborating module <counter3>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <dateClock>.
+    Related source file is "E:\xilinx\projects\dateClock\dateClock.v".
+    Summary:
+	no macro.
+Unit <dateClock> synthesized.
+
+Synthesizing Unit <freq_divider>.
+    Related source file is "E:\xilinx\projects\dateClock\freq_divider.v".
+    Found 17-bit register for signal <count1>.
+    Found 1-bit register for signal <clk_1hz>.
+    Found 10-bit register for signal <count2>.
+    Found 1-bit register for signal <clk_1khz>.
+    Found 17-bit adder for signal <count1[16]_GND_2_o_add_2_OUT> created at line 45.
+    Found 10-bit adder for signal <count2[9]_GND_2_o_add_7_OUT> created at line 56.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+Unit <freq_divider> synthesized.
+
+Synthesizing Unit <segSelector>.
+    Related source file is "E:\xilinx\projects\dateClock\segSelector.v".
+        patternA = 8'b10000001
+        patternB = 8'b11110011
+        patternC = 8'b01001001
+        patternD = 8'b01100001
+        patternE = 8'b00110011
+        patternF = 8'b00100101
+        patternG = 8'b00000101
+        patternH = 8'b11110001
+        patternI = 8'b00000001
+        patternJ = 8'b00100001
+    Found 6-bit register for signal <xCounter>.
+    Found 1-bit register for signal <hourReport>.
+    Found 1-bit register for signal <xFlag>.
+    Found 6-bit adder for signal <xCounter[5]_GND_3_o_add_2_OUT> created at line 74.
+    Found 16x8-bit Read Only RAM for signal <segSecondUnits>
+    Found 16x8-bit Read Only RAM for signal <segMinuteUnits>
+    Found 16x8-bit Read Only RAM for signal <segHourUnits>
+    Found 4x8-bit Read Only RAM for signal <segHourTens>
+    Found 8x8-bit Read Only RAM for signal <select[2]_GND_3_o_wide_mux_26_OUT>
+    Found 8x8-bit Read Only RAM for signal <_n0077>
+    Found 8x8-bit Read Only RAM for signal <_n0090>
+    Found 8-bit 7-to-1 multiplexer for signal <select[2]_PWR_3_o_wide_mux_27_OUT> created at line 187.
+    Found 7-bit comparator lessequal for signal <GND_3_o_xBCD[5]_LessThan_2_o> created at line 73
+    Summary:
+	inferred   7 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <segSelector> synthesized.
+
+Synthesizing Unit <counter8>.
+    Related source file is "E:\xilinx\projects\dateClock\counter8.v".
+    Found 3-bit register for signal <Q>.
+    Found 3-bit adder for signal <Q[2]_GND_4_o_add_1_OUT> created at line 37.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <counter8> synthesized.
+
+Synthesizing Unit <counter60>.
+    Related source file is "E:\xilinx\projects\dateClock\counter60.v".
+    Summary:
+	no macro.
+Unit <counter60> synthesized.
+
+Synthesizing Unit <counter10>.
+    Related source file is "E:\xilinx\projects\dateClock\counter10.v".
+    Found 4-bit register for signal <Q>.
+    Found 4-bit adder for signal <Q[3]_GND_6_o_add_4_OUT> created at line 46.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <counter10> synthesized.
+
+Synthesizing Unit <counter6>.
+    Related source file is "E:\xilinx\projects\dateClock\counter6.v".
+    Found 4-bit register for signal <Q>.
+    Found 4-bit adder for signal <Q[3]_GND_7_o_add_4_OUT> created at line 43.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <counter6> synthesized.
+
+Synthesizing Unit <counter24>.
+    Related source file is "E:\xilinx\projects\dateClock\counter24.v".
+    Found 6-bit subtractor for signal <x[5]_GND_8_o_sub_6_OUT> created at line 50.
+    Found 6-bit adder for signal <x> created at line 38.
+    Found 2x4-bit multiplier for signal <n0031> created at line 38.
+    Found 6-bit comparator greater for signal <n0003> created at line 49
+    Found 6-bit comparator lessequal for signal <n0005> created at line 50
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <counter24> synthesized.
+
+Synthesizing Unit <counter10_vari>.
+    Related source file is "E:\xilinx\projects\dateClock\counter10_vari.v".
+    Found 4-bit register for signal <Q>.
+    Found 1-bit register for signal <ENL_t>.
+    Found 2-bit register for signal <tenCounter>.
+    Found 2-bit adder for signal <tenCounter[1]_GND_10_o_add_13_OUT> created at line 61.
+    Found 4-bit adder for signal <Q[3]_GND_10_o_add_15_OUT> created at line 66.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   7 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <counter10_vari> synthesized.
+
+Synthesizing Unit <counter3>.
+    Related source file is "E:\xilinx\projects\dateClock\counter3.v".
+    Found 2-bit register for signal <Q>.
+    Found 2-bit adder for signal <Q[1]_GND_11_o_add_4_OUT> created at line 63.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <counter3> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 7
+ 16x8-bit single-port Read Only RAM                    : 3
+ 4x8-bit single-port Read Only RAM                     : 1
+ 8x8-bit single-port Read Only RAM                     : 3
+# Multipliers                                          : 1
+ 4x2-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 13
+ 10-bit adder                                          : 1
+ 17-bit adder                                          : 1
+ 2-bit adder                                           : 2
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 5
+ 6-bit adder                                           : 2
+ 6-bit subtractor                                      : 1
+# Registers                                            : 16
+ 1-bit register                                        : 5
+ 10-bit register                                       : 1
+ 17-bit register                                       : 1
+ 2-bit register                                        : 2
+ 3-bit register                                        : 1
+ 4-bit register                                        : 5
+ 6-bit register                                        : 1
+# Comparators                                          : 3
+ 6-bit comparator greater                              : 1
+ 6-bit comparator lessequal                            : 1
+ 7-bit comparator lessequal                            : 1
+# Multiplexers                                         : 17
+ 1-bit 2-to-1 multiplexer                              : 1
+ 2-bit 2-to-1 multiplexer                              : 2
+ 3-bit 2-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 5
+ 6-bit 2-to-1 multiplexer                              : 3
+ 8-bit 2-to-1 multiplexer                              : 4
+ 8-bit 7-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <counter10>.
+The following registers are absorbed into counter <Q>: 1 register on signal <Q>.
+Unit <counter10> synthesized (advanced).
+
+Synthesizing (advanced) Unit <counter10_vari>.
+The following registers are absorbed into counter <Q>: 1 register on signal <Q>.
+The following registers are absorbed into counter <tenCounter>: 1 register on signal <tenCounter>.
+Unit <counter10_vari> synthesized (advanced).
+
+Synthesizing (advanced) Unit <counter24>.
+	Multiplier <Mmult_n0031> in block <counter24> and adder/subtractor <Madd_x> in block <counter24> are combined into a MAC<Maddsub_n0031>.
+Unit <counter24> synthesized (advanced).
+
+Synthesizing (advanced) Unit <counter6>.
+The following registers are absorbed into counter <Q>: 1 register on signal <Q>.
+Unit <counter6> synthesized (advanced).
+
+Synthesizing (advanced) Unit <counter8>.
+The following registers are absorbed into counter <Q>: 1 register on signal <Q>.
+Unit <counter8> synthesized (advanced).
+
+Synthesizing (advanced) Unit <freq_divider>.
+The following registers are absorbed into counter <count1>: 1 register on signal <count1>.
+The following registers are absorbed into counter <count2>: 1 register on signal <count2>.
+Unit <freq_divider> synthesized (advanced).
+
+Synthesizing (advanced) Unit <segSelector>.
+The following registers are absorbed into counter <xCounter>: 1 register on signal <xCounter>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_select[2]_GND_3_o_wide_mux_26_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <select>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segSecondUnits> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <secondCount<3:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <segSecondUnits> |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0077> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <secondCount<6:4>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segMinuteUnits> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <minuteCount<3:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <segMinuteUnits> |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0090> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <minuteCount<6:4>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segHourUnits> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <hourCount<3:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <segHourUnits>  |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segHourTens> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 8-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <hourCount<5:4>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <segHourTens>   |          |
+    -----------------------------------------------------------------------
+Unit <segSelector> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 7
+ 16x8-bit single-port distributed Read Only RAM        : 3
+ 4x8-bit single-port distributed Read Only RAM         : 1
+ 8x8-bit single-port distributed Read Only RAM         : 3
+# MACs                                                 : 1
+ 4x2-to-6-bit MAC                                      : 1
+# Adders/Subtractors                                   : 2
+ 2-bit adder                                           : 1
+ 6-bit subtractor                                      : 1
+# Counters                                             : 10
+ 10-bit up counter                                     : 1
+ 17-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 5
+ 6-bit up counter                                      : 1
+# Registers                                            : 7
+ Flip-Flops                                            : 7
+# Comparators                                          : 3
+ 6-bit comparator greater                              : 1
+ 6-bit comparator lessequal                            : 1
+ 7-bit comparator lessequal                            : 1
+# Multiplexers                                         : 9
+ 1-bit 2-to-1 multiplexer                              : 1
+ 6-bit 2-to-1 multiplexer                              : 3
+ 8-bit 2-to-1 multiplexer                              : 4
+ 8-bit 7-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <dateClock> ...
+
+Optimizing unit <freq_divider> ...
+
+Optimizing unit <segSelector> ...
+
+Optimizing unit <counter24> ...
+
+Optimizing unit <counter10_vari> ...
+WARNING:Xst:1293 - FF/Latch <divider/count2_9> has a constant value of 0 in block <dateClock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <selector/secondCounter/UC1/Q_3> (without init value) has a constant value of 0 in block <dateClock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <selector/minuteCounter/UC1/Q_3> (without init value) has a constant value of 0 in block <dateClock>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <selector/xCounter_0> in Unit <dateClock> is equivalent to the following FF/Latch, which will be removed : <selector/hourReport> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block dateClock, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 61
+ Flip-Flops                                            : 61
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : dateClock.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 214
+#      GND                         : 1
+#      INV                         : 10
+#      LUT1                        : 24
+#      LUT2                        : 12
+#      LUT3                        : 16
+#      LUT4                        : 26
+#      LUT5                        : 20
+#      LUT6                        : 51
+#      MUXCY                       : 24
+#      MUXF7                       : 3
+#      VCC                         : 1
+#      XORCY                       : 26
+# FlipFlops/Latches                : 61
+#      FD                          : 7
+#      FDC                         : 3
+#      FDCE                        : 20
+#      FDE                         : 5
+#      FDR                         : 26
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 25
+#      IBUF                        : 7
+#      OBUF                        : 18
+# DSPs                             : 2
+#      DSP48E1                     : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              61  out of  126800     0%  
+ Number of Slice LUTs:                  159  out of  63400     0%  
+    Number used as Logic:               159  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    159
+   Number with an unused Flip Flop:      98  out of    159    61%  
+   Number with an unused LUT:             0  out of    159     0%  
+   Number of fully used LUT-FF pairs:    61  out of    159    38%  
+   Number of unique control sets:        14
+
+IO Utilization: 
+ Number of IOs:                          26
+ Number of bonded IOBs:                  26  out of    210    12%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+ Number of DSP48E1s:                      2  out of    240     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                  | Load  |
+-----------------------------------+--------------------------------------------------------+-------+
+divider/clk_1khz                   | NONE(divider/count2_8)                                 | 13    |
+clk                                | BUFGP                                                  | 18    |
+divider/clk_1hz                    | BUFG                                                   | 30    |
+divider/count2<9>                  | NONE(selector/hourCounter/Msub_x[5]_GND_8_o_sub_6_OUT1)| 1     |
+-----------------------------------+--------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.915ns (Maximum Frequency: 203.446MHz)
+   Minimum input arrival time before clock: 1.184ns
+   Maximum output required time after clock: 7.686ns
+   Maximum combinational path delay: 3.236ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'divider/clk_1khz'
+  Clock period: 2.080ns (frequency: 480.677MHz)
+  Total number of paths / destination ports: 142 / 23
+-------------------------------------------------------------------------
+Delay:               2.080ns (Levels of Logic = 2)
+  Source:            divider/count2_2 (FF)
+  Destination:       divider/count2_8 (FF)
+  Source Clock:      divider/clk_1khz rising
+  Destination Clock: divider/clk_1khz rising
+
+  Data Path: divider/count2_2 to divider/count2_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.361   0.561  divider/count2_2 (divider/count2_2)
+     LUT4:I0->O            1   0.097   0.295  divider/count2[9]_GND_2_o_equal_7_o<9>_SW0 (N2)
+     LUT6:I5->O           10   0.097   0.321  divider/count2[9]_GND_2_o_equal_7_o<9> (divider/count2[9]_GND_2_o_equal_7_o)
+     FDR:R                     0.349          divider/count2_0
+    ----------------------------------------
+    Total                      2.080ns (0.904ns logic, 1.176ns route)
+                                       (43.5% logic, 56.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.461ns (frequency: 406.421MHz)
+  Total number of paths / destination ports: 460 / 36
+-------------------------------------------------------------------------
+Delay:               2.461ns (Levels of Logic = 2)
+  Source:            divider/count1_8 (FF)
+  Destination:       divider/count1_16 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: divider/count1_8 to divider/count1_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.361   0.688  divider/count1_8 (divider/count1_8)
+     LUT5:I0->O            1   0.097   0.511  divider/count1[16]_GND_2_o_equal_2_o<16>1 (divider/count1[16]_GND_2_o_equal_2_o<16>)
+     LUT5:I2->O           18   0.097   0.358  divider/count1[16]_GND_2_o_equal_2_o<16>4 (divider/count1[16]_GND_2_o_equal_2_o)
+     FDR:R                     0.349          divider/count1_0
+    ----------------------------------------
+    Total                      2.461ns (0.904ns logic, 1.556ns route)
+                                       (36.7% logic, 63.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'divider/clk_1hz'
+  Clock period: 4.915ns (frequency: 203.446MHz)
+  Total number of paths / destination ports: 715 / 49
+-------------------------------------------------------------------------
+Delay:               4.915ns (Levels of Logic = 4)
+  Source:            selector/hourCounter/UC1/Q_1 (FF)
+  Destination:       selector/xCounter_3 (FF)
+  Source Clock:      divider/clk_1hz rising
+  Destination Clock: divider/clk_1hz rising
+
+  Data Path: selector/hourCounter/UC1/Q_1 to selector/xCounter_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.361   0.293  selector/hourCounter/UC1/Q_1 (selector/hourCounter/UC1/Q_1)
+     DSP48E1:A1->P0        3   2.823   0.521  selector/hourCounter/Maddsub_n0031 (selector/xBCD<0>)
+     LUT6:I3->O            6   0.097   0.318  selector/_n00952 (selector/_n00952)
+     LUT6:I5->O            2   0.097   0.299  selector/_n00953 (selector/_n0095)
+     LUT6:I5->O            1   0.097   0.000  selector/xCounter_3_rstpot (selector/xCounter_3_rstpot)
+     FD:D                      0.008          selector/xCounter_3
+    ----------------------------------------
+    Total                      4.915ns (3.483ns logic, 1.432ns route)
+                                       (70.9% logic, 29.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'divider/clk_1hz'
+  Total number of paths / destination ports: 46 / 43
+-------------------------------------------------------------------------
+Offset:              1.184ns (Levels of Logic = 2)
+  Source:            EN (PAD)
+  Destination:       selector/secondCounter/UC1/Q_2 (FF)
+  Destination Clock: divider/clk_1hz rising
+
+  Data Path: EN to selector/secondCounter/UC1/Q_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   0.001   0.702  EN_IBUF (EN_IBUF)
+     LUT5:I0->O            3   0.097   0.289  selector/secondCounter/UC1/_n0017_inv1 (selector/secondCounter/UC1/_n0017_inv)
+     FDCE:CE                   0.095          selector/secondCounter/UC1/Q_0
+    ----------------------------------------
+    Total                      1.184ns (0.193ns logic, 0.991ns route)
+                                       (16.3% logic, 83.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'divider/clk_1khz'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              0.737ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       selector/refreshCounter/Q_2 (FF)
+  Destination Clock: divider/clk_1khz rising
+
+  Data Path: reset to selector/refreshCounter/Q_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            38   0.001   0.387  reset_IBUF (reset_IBUF)
+     FDC:CLR                   0.349          selector/refreshCounter/Q_0
+    ----------------------------------------
+    Total                      0.737ns (0.350ns logic, 0.387ns route)
+                                       (47.5% logic, 52.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'divider/clk_1khz'
+  Total number of paths / destination ports: 144 / 15
+-------------------------------------------------------------------------
+Offset:              3.332ns (Levels of Logic = 5)
+  Source:            selector/refreshCounter/Q_2 (FF)
+  Destination:       segO<3> (PAD)
+  Source Clock:      divider/clk_1khz rising
+
+  Data Path: selector/refreshCounter/Q_2 to segO<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             32   0.361   0.618  selector/refreshCounter/Q_2 (selector/refreshCounter/Q_2)
+     LUT5:I2->O            2   0.097   0.698  selector/Mmux_segO651 (selector/Mmux_segO65)
+     LUT6:I0->O            1   0.097   0.693  selector/Mmux_segO63_SW0 (N39)
+     LUT6:I0->O            1   0.097   0.295  selector/Mmux_segO63 (selector/Mmux_segO66)
+     LUT5:I4->O            1   0.097   0.279  selector/Mmux_segO67 (segO_3_OBUF)
+     OBUF:I->O                 0.000          segO_3_OBUF (segO<3>)
+    ----------------------------------------
+    Total                      3.332ns (0.749ns logic, 2.583ns route)
+                                       (22.5% logic, 77.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'divider/clk_1hz'
+  Total number of paths / destination ports: 18177 / 9
+-------------------------------------------------------------------------
+Offset:              7.686ns (Levels of Logic = 8)
+  Source:            selector/hourCounter/UC1/Q_1 (FF)
+  Destination:       segO<4> (PAD)
+  Source Clock:      divider/clk_1hz rising
+
+  Data Path: selector/hourCounter/UC1/Q_1 to segO<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.361   0.293  selector/hourCounter/UC1/Q_1 (selector/hourCounter/UC1/Q_1)
+     DSP48E1:A1->P3       13   2.823   0.739  selector/hourCounter/Maddsub_n0031 (selector/xBCD<3>)
+     LUT6:I1->O            8   0.097   0.726  selector/hourCounter/n00031 (selector/hourCounter/n0003)
+     LUT6:I0->O            5   0.097   0.398  selector/hourCounter/Mmux_mCnt_t12 (selector/hourCounter/Mmux_mCnt_t12)
+     LUT5:I3->O            7   0.097   0.721  selector/hourCounter/Mmux_mCnt_t41 (selector/hourCount<3>)
+     LUT6:I0->O            1   0.097   0.379  selector/Mmux_segO25 (selector/Mmux_segO24)
+     LUT6:I4->O            2   0.097   0.383  selector/Mmux_segO26 (segO_1_OBUF)
+     LUT6:I4->O            1   0.097   0.279  selector/Mmux_segO84 (segO_4_OBUF)
+     OBUF:I->O                 0.000          segO_4_OBUF (segO<4>)
+    ----------------------------------------
+    Total                      7.686ns (3.766ns logic, 3.920ns route)
+                                       (49.0% logic, 51.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'divider/count2<9>'
+  Total number of paths / destination ports: 46 / 7
+-------------------------------------------------------------------------
+Offset:              3.933ns (Levels of Logic = 5)
+  Source:            selector/hourCounter/Msub_x[5]_GND_8_o_sub_6_OUT1 (DSP)
+  Destination:       segO<4> (PAD)
+  Source Clock:      divider/count2<9> rising
+
+  Data Path: selector/hourCounter/Msub_x[5]_GND_8_o_sub_6_OUT1 to segO<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     DSP48E1:CLK->P0       1   1.452   0.511  selector/hourCounter/Msub_x[5]_GND_8_o_sub_6_OUT1 (selector/hourCounter/x[5]_GND_8_o_sub_6_OUT<0>)
+     LUT6:I3->O            7   0.097   0.539  selector/hourCounter/Mmux_mCnt_t1 (selector/hourCount<0>)
+     LUT6:I3->O            1   0.097   0.379  selector/Mmux_segO25 (selector/Mmux_segO24)
+     LUT6:I4->O            2   0.097   0.383  selector/Mmux_segO26 (segO_1_OBUF)
+     LUT6:I4->O            1   0.097   0.279  selector/Mmux_segO84 (segO_4_OBUF)
+     OBUF:I->O                 0.000          segO_4_OBUF (segO<4>)
+    ----------------------------------------
+    Total                      3.933ns (1.840ns logic, 2.093ns route)
+                                       (46.8% logic, 53.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 102 / 16
+-------------------------------------------------------------------------
+Delay:               3.236ns (Levels of Logic = 7)
+  Source:            mode (PAD)
+  Destination:       segO<4> (PAD)
+
+  Data Path: mode to segO<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.001   0.589  mode_IBUF (mode_IBUF)
+     LUT6:I2->O            5   0.097   0.398  selector/hourCounter/Mmux_mCnt_t12 (selector/hourCounter/Mmux_mCnt_t12)
+     LUT5:I3->O            7   0.097   0.721  selector/hourCounter/Mmux_mCnt_t41 (selector/hourCount<3>)
+     LUT6:I0->O            1   0.097   0.379  selector/Mmux_segO25 (selector/Mmux_segO24)
+     LUT6:I4->O            2   0.097   0.383  selector/Mmux_segO26 (segO_1_OBUF)
+     LUT6:I4->O            1   0.097   0.279  selector/Mmux_segO84 (segO_4_OBUF)
+     OBUF:I->O                 0.000          segO_4_OBUF (segO<4>)
+    ----------------------------------------
+    Total                      3.236ns (0.486ns logic, 2.750ns route)
+                                       (15.0% logic, 85.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.461|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock divider/clk_1hz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+divider/clk_1hz|    4.915|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock divider/clk_1khz
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+divider/clk_1khz|    2.080|         |         |         |
+----------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.80 secs
+ 
+--> 
+
+Total memory usage is 295056 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

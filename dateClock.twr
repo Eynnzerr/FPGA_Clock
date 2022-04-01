@@ -1,0 +1,83 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+E:\xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml dateClock.twx dateClock.ncd -o dateClock.twr dateClock.pcf
+-ucf port.ucf
+
+Design file:              dateClock.ncd
+Physical constraint file: dateClock.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.281|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+mode           |noon           |    7.875|
+mode           |segO<1>        |    9.007|
+mode           |segO<2>        |    9.160|
+mode           |segO<3>        |    9.372|
+mode           |segO<4>        |    9.726|
+mode           |segO<5>        |    9.840|
+mode           |segO<6>        |    9.790|
+mode           |segO<7>        |    9.843|
+reset          |bitO<0>        |   11.262|
+reset          |bitO<1>        |   11.399|
+reset          |bitO<2>        |   10.326|
+reset          |bitO<3>        |   10.666|
+reset          |bitO<4>        |   10.712|
+reset          |bitO<5>        |   11.060|
+reset          |bitO<6>        |    9.333|
+reset          |bitO<7>        |    9.163|
+reset          |segO<1>        |    9.728|
+reset          |segO<2>        |   10.117|
+reset          |segO<3>        |    9.845|
+reset          |segO<4>        |   10.235|
+reset          |segO<5>        |   10.627|
+reset          |segO<6>        |   10.577|
+reset          |segO<7>        |    9.742|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Apr 01 23:48:49 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 411 MB
+
+
+
